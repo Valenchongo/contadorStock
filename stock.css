@@ -1,0 +1,143 @@
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;;
+   
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.noañadir{
+    height: 50px;
+    width: 80px;
+    background-color: rgb(236, 57, 57);
+    font-weight: bold;
+    font-size: 2vh;
+    border-radius: 10px;
+}
+
+
+
+nav{
+    display: flex;
+    background-color: rgb(233, 225, 225);
+    height: 9vh;
+    justify-content: center;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    width: 100%;
+}
+.logo{
+    margin-top: 14px;
+    font-weight: 300;
+    font-weight: bold;
+    font-size: 4vh;
+    color: rgb(9, 9, 126);
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.inputnombre{
+    width: 20vh;
+    height: 3vh;
+    margin-bottom: 15px;
+}
+
+.inputcantidad{
+    width: 10vh;
+    margin-left: 2vh;
+    height: 3vh;
+    text-align: center;
+  
+}
+button{
+    height: 3vh;
+    width: 6vh;
+    
+}
+.sumayresta{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+    
+}
+.restar{
+    margin-left: 0px;
+    background-color:#EC7063;
+    
+}
+.sumar{
+    margin-right: 0;
+    background-color: #58D68D;
+    
+}
+
+.seccionboton{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+
+}
+
+.divañad{
+margin-top: 2vh;
+}
+.añadir{
+    height: 50px;
+    width: 80px;
+    border-radius: 25% 10%;
+    background-color: #58D68D;
+}
+
+@media (min-width:321px){
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nombre{
+        align-self: center;
+    }
+    .inputnombre{
+        align-self: center;
+        width: 300px;
+
+    }
+    .cantidad{
+        align-self: center;
+       margin-right: 10px;
+    }
+    .inputcantidad{
+        align-self: center;
+        object-fit:fill;
+        text-align: center;
+    }
+
+    button{
+        height: 4vh;
+        width: 7vh;
+        text-align: center;
+        
+    }
+
+    .inputcantidad::placeholder{
+        color: rgb(88, 88, 91);
+    }
+
+    .inputnombre::placeholder{
+        color:rgb(88, 88, 91);
+    }
+}
