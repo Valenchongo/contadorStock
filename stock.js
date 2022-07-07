@@ -193,7 +193,7 @@ inputcantidad14.innerHTML = cantidadtotal;
 r++
     }
 if(r>1){
-botonañadir.innerHTML = `maximo alcanzado`  
+botonañadir.innerHTML = `Max alcanzado`  
 botonañadir.classList.replace("añadir","noañadir") 
 botonañadir.addEventListener("click",()=>{
     alert("ya alcanzo la cantidad maxima de productos")   
